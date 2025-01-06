@@ -10,10 +10,8 @@
 </head>
 <body style="background-color: black; color: white;">
 
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            
             <a class="navbar-brand" href="#">Polskie Kino</a>
             <div class="ms-auto d-flex align-items-center">
                 <a class="nav-link text-white" href="#">Zaloguj się</a>
@@ -24,13 +22,12 @@
 
     <div class="navbar navbar-expand-lg navbar-dark bg-warning text-dark">
         <div class="container">
-          
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">REPERTUAR</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">OFERTY</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">PREZENTY</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">BAR</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">JEDZNIE</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">JEDZENIE</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">BLOG</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">UNLIMITED</a></li>
                 <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">VIP</a></li>
@@ -38,95 +35,33 @@
         </div>
     </div>
 
-
     <div class="container-fluid bg-orange text-white text-center py-5">
         <h1>Sonic 3 - Szybki jak błyskawica</h1>
         <p>Piorunem wlatuje do kin w formatach ScreenX i 4DX!</p>
         <button class="btn btn-warning btn-lg">Kup Bilet</button>
     </div>
 
- 
     <div class="container mt-5 bg-black-content">
         <h2 class="text-center mb-4">NA EKRANIE</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/trefliki.png" alt="Plakat 1">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Trefliki ratują święta</p>
+        <div class="row gx-3 gy-4">
+            <?php
+            include 'connect.php';
+            foreach ($posters as $poster): ?>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card bg-black border-0">
+                        <img class="card-img-top" src="<?php echo htmlspecialchars($poster['sciezka_pliku']); ?>" alt="<?php echo htmlspecialchars($poster['tytul']); ?>" style="height: 300px; object-fit: cover;">
+                        <div class="card-body bg-black text-light text-center">
+                            <p class="card-title mb-0"><?php echo htmlspecialchars($poster['tytul']); ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/dogman.png" alt="Plakat 2">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Dog man</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/mufasa.png" alt="Plakat 3">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Mufasa: Król lew</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/robot.png" alt="Plakat 4">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Dziki robot</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-5 bg-black-content">
-        <h2 class="text-center mb-4">WYDARZENIA SPECJALNE</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/zimamamymu.png" alt="Wydarzenie 1">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Zima mamy mu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/paddingtonwperu.png" alt="Wydarzenie 2">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Paddington w Peru</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/reniferniko.png" alt="Wydarzenie 3">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Reniferek Niko i zaginione sanie mikołaja</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="images/Vaiana2.png" alt="Wydarzenie 4">
-                    <div class="card-body bg-black text-light text-center">
-                        <p class="card-title">Vaiana 2</p>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
     <footer class="bg-orange text-white text-center py-5 mt-5">
-       
         <div class="container">
             <div class="row">
-           
                 <div class="col-md-4">
                     <h5>Linki</h5>
                     <ul class="list-unstyled">
@@ -155,8 +90,6 @@
                 </div>
             </div>
         </div>
-    
-      
         <p class="mt-4">&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
     </footer>
 

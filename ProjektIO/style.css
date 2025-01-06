@@ -1,132 +1,55 @@
 body {
-    min-height: 1080px;
-}
-
-
-.navbar.bg-black {
-    background-color: black !important; 
-}
-
-
-.navbar.bg-orange {
-    background-color: orange !important; 
-}
-
-
-.navbar-nav {
-    display: flex;
-    justify-content: center; 
-    width: 100%;
-}
-
-.navbar-nav .nav-link {
-    color: black !important; 
-}
-
-.nav-link {
-    color: rgb(2, 0, 0) !important;
-    margin: 0 15px; 
-}
-
-
-.ms-auto .nav-link:first-child {
-    margin-right: 20px; 
-}
-
-.navbar.bg-warning {
-    background-color: orange !important; 
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: black !important;  
-}
-
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: black !important;  
+    background-color: black;
+    color: white;
 }
 
 .card {
-    border: 1px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    max-width: 180px;
-    margin: 0 auto;
-    background-color: black; 
+    background-color: black;
+    border: none;
+    transition: transform 0.3s;
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
     padding: 10px;
-    min-height: 70px; 
-    background-color: black; 
-}
-
-.card-title {
     font-size: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: white; 
+    font-weight: bold;
 }
-
-
-.container-fluid.bg-orange {
-    background-color: orange !important;
-}
-
 
 .bg-black-content {
-    background-color: black !important;
+    padding: 20px;
+}
+
+.row.gx-3 {
+    gap: 1rem; /* Dodatkowy odstęp między kolumnami */
+}
+
+h1, h2 {
+    color: white;
+}
+
+.bg-orange {
+    background-color: #FF9900;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #333;
 }
 
 footer {
-    background-color: orange;
+    background-color: #FF9900;
     color: white;
-    text-align: center;
-    padding: 3rem 0 2rem 0; 
-    font-size: 1rem;
-    border-top: 1px solid white; 
-    margin-top: 2rem;
+    padding: 20px 0;
 }
-
-footer h5 {
-    font-size: 1.2rem; 
-    margin-bottom: 1rem; 
-}
-
-footer ul {
-    padding-left: 0; 
-    list-style: none; 
-}
-footer a {
-    text-decoration: none; 
-    color: white; 
-}
-
-footer a:hover {
-    text-decoration: none; 
-}
-
-
-/* Stopka 
-footer {
-    background-color: orange;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 1rem;
-}*/

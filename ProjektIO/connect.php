@@ -1,9 +1,9 @@
 <?php
-// Połączenie z bazą danych
+// Połączenie z bazą danyc
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "polskiekino";
+$username = "root";
+$password = "";
+$dbname = "plakaty";
 
 // Tworzymy połączenie
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 // Zamykamy połączenie
 $conn->close();
 
-// Wysyłamy dane w formacie JSON
+/*// Wysyłamy dane w formacie JSON
 header('Content-Type: application/json');
-echo json_encode($posters);
+echo json_encode($posters);*/
 ?>
