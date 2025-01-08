@@ -17,3 +17,14 @@ VALUES
     ('Paddington w Peru', 'images/paddingtonwperu.png', 'Nowe przygody misia Paddingtona.', 'Komedia'),
     ('Reniferek Niko i zaginione sanie mikołaja', 'images/reniferniko.png', 'Świąteczna historia reniferka Niko.', 'Dzieci'),
     ('Vaiana 2', 'images/Vaiana2.png', 'Kontynuacja przygód Vaiany na oceanie.', 'Animacja');
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+

@@ -31,25 +31,106 @@ body {
 .row.gx-3 {
     gap: 1rem; /* Dodatkowy odstęp między kolumnami */
 }
+.row.justify-content-center {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    gap: 1.5rem; /* Odstępy między kolumnami */
+}
+
+.card {
+    text-align: center;
+    margin: auto; /* Wyśrodkowanie */
+}
 
 h1, h2 {
     color: white;
 }
 
 .bg-orange {
-    background-color: #FF9900;
+    background-color: #FF9900 !important;
+}
+   /* Usunięcie podkreślenia z przycisków */
+   .navbar .btn-link {
+    text-decoration: none;
+    color: #343a40; /* Kolor tekstu przycisku */
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: #000;
+
+
+
+/* Domyślny wygląd przycisków */
+.navbar-nav .nav-item .btn-link {
+    color: #000; /* Kolor tekstu */
+    background-color: transparent; /* Przezroczyste tło */
+}
+/* Efekt hover dla przycisków */
+.navbar-nav .nav-item .btn-link:hover {
+    color: white!important; 
+    background-color: transparent !important; /* Brak tła */
+}
+.newsletter-container {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+.newsletter-container h2 {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4C4480;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #405080;
+}
+
+small {
+    font-size: 9px;
+    color: #777;
+    display: block;
+    margin-top: 10px;
+    line-height: 1.2;
 }
 
 footer {
-    background-color: #FF9900;
-    color: white;
+    background-color: #FF9900 !important;
+    color: white !important;
     padding: 20px 0;
+
+
 }
