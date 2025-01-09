@@ -6,6 +6,7 @@
     <title>Polskie Kino Layout</title>
  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black; color: white;">
@@ -41,7 +42,7 @@
                 <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">JEDZENIE</button>
             </li>
             <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">Oferty</button>
+                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">OFERTY</button>
             </li>
             <li class="nav-item">
                 <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">BLOG</button>
@@ -54,16 +55,30 @@
 </div>
 
 
-<div class="container-fluid bg-black text-white text-center py-5">
-        <h1>Sonic 3 - Szybki jak błyskawica</h1>
-        <p>Piorunem wlatuje do kin w formatach ScreenX i 4DX!</p>
-        <button class="btn btn-warning btn-lg">Kup Bilet</button>
+<div class="position-relative bg-dark">
+    <!-- Tło dla filmu -->
+    <div class="video-background">
+        <div class="overlay"></div>
+        <div class="ratio ratio-16x9">
+            <iframe 
+                src="https://www.youtube.com/embed/LH1J1EbqCaI?autoplay=1&mute=1&loop=1&playlist=LH1J1EbqCaI"
+                title="Sonic 3 Trailer" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Tekst na filmie -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="display-4 fw-bold">Sonic 3 - Szybki jak błyskawica</h1>
+        <p class="lead">Piorunem wlatuje do kin w formatach ScreenX i 4DX!</p>
+        <a href="#" class="btn btn-warning btn-lg px-5 py-3">Kup Bilet</a>
+    </div>
 </div>
-
-
-
 <div class="container mt-5 bg-black-content">
-    <h2 class="text-center mb-4">NA EKRANIE</h2>
+<h2 class="text-center mb-4">NA EKRANIE</h2>
     <div class="row justify-content-center gx-3 gy-4">
         <?php
         include 'connect.php';
@@ -79,6 +94,108 @@
         <?php endforeach; ?>
     </div>
 </div>
+
+<div class="container mt-5">
+    <h2 class="text-left mb-4">Aktualności</h2>
+    <div id="aktualnosciCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <!-- Aktualność 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                            <h5 class="card-title"><a href="aktualnosc1.html" class="text-warning">Nowości w repertuarze</a></h5>
+                                <p class="card-text">Zobacz najnowsze filmy, które pojawiły się w naszym kinie! Już teraz dostępne w systemie rezerwacji.</p>
+                                <p class="card-text"><small class="text-muted">Data: 09.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aktualność 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="aktualnosc2.html" class="text-warning">Promocje na bilety</a></h5>
+                                <p class="card-text">Sprawdź nasze aktualne promocje na bilety! Skorzystaj z wyjątkowych ofert i ciesz się filmami w niższej cenie.</p>
+                                <p class="card-text"><small class="text-muted">Data: 08.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aktualność 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="aktualnosc3.html" class="text-warning">Wydarzenia specjalne</a></h5>
+                                <p class="card-text">Zarezerwuj bilety na wydarzenia specjalne, takie jak pokazy przedpremierowe, spotkania z twórcami i inne!</p>
+                                <p class="card-text"><small class="text-muted">Data: 07.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aktualność 4 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="aktualnosc4.html" class="text-warning">Nowe technologie w kinie</a></h5>
+                                <p class="card-text">Dowiedz się, jakie nowe technologie wprowadziliśmy w naszych kinach, aby zapewnić najlepsze doświadczenie kinowe!</p>
+                                <p class="card-text"><small class="text-muted">Data: 06.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aktualność 5 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="aktualnosc5.html" class="text-warning">Bezpieczne kino w czasie pandemii</a></h5>
+                                <p class="card-text">Zobacz jak dbamy o bezpieczeństwo naszych gości w czasie pandemii - nowe procedury i środki ostrożności w kinach.</p>
+                                <p class="card-text"><small class="text-muted">Data: 05.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aktualność 6 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-dark border-0 text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="aktualnosc6.html" class="text-warning">Nowe filmy w 4DX</a></h5>
+                                <p class="card-text">Zobacz filmy w nowoczesnym formacie 4DX, które zapewnią ci niesamowite wrażenia podczas projekcji!</p>
+                                <p class="card-text"><small class="text-muted">Data: 04.01.2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Kontrolki karuzeli -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#aktualnosciCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Poprzedni</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aktualnosciCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Następny</span>
+        </button>
+    </div>
+</div>
+
 
 <div class="newsletter-container">
     <h2>Newsletter</h2>

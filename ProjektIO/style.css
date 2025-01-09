@@ -3,6 +3,7 @@ body {
     color: white;
 }
 
+
 .card {
     background-color: black;
     border: none;
@@ -68,16 +69,50 @@ h1, h2 {
     color: white!important; 
     background-color: transparent !important; /* Brak tła */
 }
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.video-background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Półprzezroczysta warstwa */
+    z-index: 1;
+}
+
+.position-absolute {
+    z-index: 2; /* Tekst nad wideo */
+}
+
+
 .newsletter-container {
     background-color: #f8f9fa;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 50px auto 0; /* Zwiększ margines górny (50px) dla większej przestrzeni */
     text-align: center;
 }
-
+.container.mt-5 {
+    margin-top: 60px; /* Upewnij się, że sekcja aktualności ma odpowiednią przestrzeń z góry */
+}
 .newsletter-container h2 {
     font-size: 24px;
     color: #333;
@@ -133,4 +168,110 @@ footer {
     padding: 20px 0;
 
 
+}
+
+  /* Styl dla tła wideo */
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ratio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+    z-index: 1; /* Ustawiamy iframe na dolnej warstwie */
+}
+
+/* Flexbox dla wyśrodkowanego tekstu */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2; /* Ustawiamy tekst na wyższej warstwie */
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .content {
+        top: 40% !important; /* Dopasowanie pozycji na tabletach */
+    }
+
+    h1 {
+        font-size: 1.75rem; /* Zmniejszenie rozmiaru nagłówka na mniejszych ekranach */
+    }
+
+    .lead {
+        font-size: 1rem; /* Zmniejszenie rozmiaru tekstu */
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem; /* Dopasowanie rozmiaru przycisku */
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        top: 35% !important; /* Dopasowanie pozycji na bardzo małych ekranach */
+    }
+
+    h1 {
+        font-size: 1.25rem; /* Zmniejszenie rozmiaru nagłówka */
+    }
+
+    .lead {
+        font-size: 0.875rem; /* Zmniejszenie rozmiaru tekstu */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Zmniejszenie paddingu przycisku */
+    }
+}
+
+ /* Nowy styl dla aktualności */
+ .carousel-item .card {
+    background-color: black;
+    border: 2px solid #4C4480 !important; /* Fioletowa ramka */
+    text-align: center;
+}
+
+.carousel-item .card-body {
+    background-color: black;
+    color: white;
+}
+
+.carousel-item .card-title a {
+    color: #4C4480 !important;
+    text-decoration: none;
+}
+.carousel-item .card-text small {
+    color: #fff !important; /* Zmieniamy kolor daty na biały */
+}
+.carousel-item .card-title a:hover {
+    text-decoration: underline;
+}
+
+.carousel-control-prev {
+    left: -50px; /* Przycisk "poprzedni" umieszczamy na lewo */
+}
+
+.carousel-control-next {
+    right: -50px; /* Przycisk "następny" umieszczamy na prawo */
 }
