@@ -15,8 +15,9 @@ VALUES
     ('Dziki Robot', 'images/robot.png', 'Przygody robota w dzikim świecie.', 'Sci-Fi'),
     ('Zima mamy mu', 'images/zimamamymu.png', 'Zimowa opowieść o Mamie Mu.', 'Dzieci'),
     ('Paddington w Peru', 'images/paddingtonwperu.png', 'Nowe przygody misia Paddingtona.', 'Komedia'),
-    ('Reniferek Niko i zaginione sanie mikołaja', 'images/reniferniko.png', 'Świąteczna historia reniferka Niko.', 'Dzieci'),
-    ('Vaiana 2', 'images/Vaiana2.png', 'Kontynuacja przygód Vaiany na oceanie.', 'Animacja');
+    ('Reniferek Niko', 'images/reniferniko.png', 'Świąteczna historia reniferka Niko.', 'Dzieci'),
+    ('Vaiana 2', 'images/Vaiana2.png', 'Kontynuacja przygód Vaiany na oceanie.', 'Animacja'),
+    ('Sonic', 'images/Sonicplakat.png', 'Przygodowa komedia stworzona na bazie gry.', 'Komedia');
 
 
 CREATE TABLE users (

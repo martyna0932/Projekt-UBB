@@ -210,6 +210,17 @@ iframe {
     z-index: 2; /* Ustawiamy tekst na wyższej warstwie */
 }
 
+.text-dark a {
+    text-decoration: none !important; /* Usuwamy podkreślenie */
+}
+
+/* Opcjonalnie, aby zapobiec podkreśleniu linków po najechaniu */
+.text-dark a:hover {
+    text-decoration: none !important; /* Usuwamy podkreślenie podczas najechania */
+}
+
+
+
 /* Responsywność */
 @media (max-width: 768px) {
     .content {

@@ -15,11 +15,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <a class="navbar-brand" href="#">Polskie Kino</a>
+            <a class="navbar-brand fw-bold" href="#">Polskie Kino</a>
             <div class="ms-auto d-flex align-items-center">
       <!-- Przyciski Zaloguj się i Zarejestruj się -->
-      <a class="btn btn-outline-light me-2" href="login.html">Zaloguj się</a>
-            <a class="btn btn-light" href="register.html">Rejestracja</a>
+      <a class="btn btn-outline-light me-2 fw-bold" href="login.html">Zaloguj się</a>
+            <a class="btn btn-light fw-bold" href="register.html">Rejestracja</a>
             </div>
         </div>
     </nav>
@@ -273,64 +273,92 @@
 
 <footer class="bg-orange text-white py-4 mt-5">
     <div class="container">
-        <div class="row justify-content-center">
+        <!-- Używamy flexboxa w row dla układu obok siebie -->
+        <div class="row d-flex justify-content-between">
 
-            
-           <!-- Social Media Section -->
-           <div class="col-md-5 text-center mb-4">
-                <h5>Social Media</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="mx-3">
-                        <a href="https://www.instagram.com/" class="text-white d-block">
-                            <img src="icons/instagram.png" alt="Instagram" style="width: 48px; height: 48px;">
-                            <p>Instagram</p>
-                        </a>
-                    </div>
-                    <div class="mx-3">
-                        <a href="https://www.facebook.com/" class="text-white d-block">
-                            <img src="icons/facebook.png" alt="Facebook" style="width: 48px; height: 48px;">
-                            <p>Facebook</p>
-                        </a>
-                    </div>
-                    <div class="mx-3">
-                        <a href="https://twitter.com/" class="text-white d-block">
-                            <img src="icons/twitter.png" alt="Twitter" style="width: 48px; height: 48px;">
-                            <p>Twitter</p>
-                        </a>
-                    </div>
-                    <div class="mx-3">
-                        <a href="https://www.youtube.com/" class="text-white d-block">
-                            <img src="icons/youtube.png" alt="YouTube" style="width: 48px; height: 48px;">
-                            <p>YouTube</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4 text-center mb-4">
+    <h5 class="text-dark ">Obserwuj nas</h5>
+    <div class="d-flex flex-column align-items-center"> <!-- Zmienione z 'd-flex justify-content-center' na 'd-flex flex-column align-items-center' -->
+        <div class="d-flex align-items-center mx-3 mb-2 justify-content-center text-dark"> <!-- Zmienione 'd-flex flex-column' na 'd-flex' i 'align-items-center' -->
+            <a href="ig.html" class="d-flex align-items-center ">
+                <img src="icons/ig.png" alt="Instagram" style="width: 18px; height: 18px; margin-right: 8px;">
+                <p class="text-dark mb-0">Instagram</p>
+            </a>
+        </div>
+        <div class="d-flex align-items-center mx-3 mb-2 justify-content-center text-dark">
+            <a href="fb.html" class="d-flex align-items-center">
+                <img src="icons/fb.png" alt="Facebook" style="width: 18px; height: 18px; margin-right: 8px;">
+                <p class="text-dark mb-0">Facebook</p>
+            </a>
+        </div>
+        <div class="d-flex align-items-center mx-3 mb-2 justify-content-center text-dark">
+            <a href="tw.html" class=" d-flex align-items-center">
+                <img src="icons/tw.png" alt="Twitter" style="width: 18px; height: 18px; margin-right: 8px;">
+                <p class="text-dark mb-0">Twitter</p>
+            </a>
+        </div>
+        <div class="d-flex align-items-center mx-3 mb-2 justify-content-center text-dark">
+            <a href="yt.html" class=" d-flex align-items-center">
+                <img src="icons/yt.png" alt="YouTube" style="width: 18px; height: 18px; margin-right: 8px;">
+                <p class="text-dark mb-0">YouTube</p>
+            </a>
+        </div>
+    </div>
+</div>
 
-            <!-- Nasze Kino Section (with "O nas", "Kariera", "Mapa kina") -->
-            <div class="col-md-5 text-center mb-4">
-                <h5>Nasze Kino</h5>
+
+            <!-- Nasze Kino Section -->
+            <div class="col-md-4 text-center mb-4">
+                <h5 class="text-dark ">NASZE KINO</h5>
                 <ul class="list-unstyled">
-                    <li class="d-flex justify-content-center">
-                        <a href="o-nas.html" class="text-white d-flex align-items-center">
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="o-nas.html" class="text-dark d-flex align-items-center">
                             O nas
-                            <img src="icons/arrow.png" alt="Arrow" style="width: 16px; height: 16px; margin-left: 8px;">
+                            
                         </a>
                     </li>
-                    <li class="d-flex justify-content-center">
-                        <a href="kariera.html" class="text-white d-flex align-items-center">
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="kariera.html" class="text-dark d-flex align-items-center">
                             Kariera
-                            <img src="icons/arrow.png" alt="Arrow" style="width: 16px; height: 16px; margin-left: 8px;">
+                            
                         </a>
                     </li>
-                    <li class="d-flex justify-content-center">
-                        <a href="mapa-kina.html" class="text-white d-flex align-items-center">
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="mapa-kina.html" class="text-dark d-flex align-items-center">
                             Mapa kina
-                            <img src="icons/arrow.png" alt="Arrow" style="width: 16px; height: 16px; margin-left: 8px;">
+                            
                         </a>
                     </li>
                 </ul>
             </div>
+
+            <!-- Informacje Section -->
+            <div class="col-md-4 text-center mb-4">
+                <h5 class="text-dark ">INFORMACJE</h5>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="kontakt.html" class="text-dark d-flex align-items-center">
+                            Kontakt do nas
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="regulamin.html" class="text-dark d-flex align-items-center">
+                            Regulamin
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="polityka.html" class="text-dark d-flex align-items-center">
+                            Polityka prywatności
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center text-dark">
+                        <a href="pomoc.html" class="text-dark d-flex align-items-center">
+                            Pomoc
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- Thin line before the next section -->
@@ -338,11 +366,11 @@
 
         <!-- Linki Section (Now in a row) -->
         <div class="col-md-12 text-center mb-4">
+            <h5 class="text-dark";>POBIERZ APLIKACJE</h5>
             <ul class="list-unstyled d-flex justify-content-center">
-                <li class="mx-3"><a href="kontakt.html" class="text-white small">Kontakt do nas</a></li>
-                <li class="mx-3"><a href="regulamin.html" class="text-white small">Regulamin</a></li>
-                <li class="mx-3"><a href="polityka-prywatnosci.html" class="text-white small">Polityka prywatności</a></li>
-                <li class="mx-3"><a href="pomoc.html" class="text-white small">Pomoc</a></li>
+                <li class="mx-3 text-dark"><a href="1.html" class="text-dark small ">Android</a></li>
+                <li class="mx-3 text-dark"><a href="1" class="text-dark small ">iOS</a></li>
+               
             </ul>
         </div>
 
@@ -350,9 +378,11 @@
         <hr class="my-3" style="border-color: #fff;">
 
         <!-- Copyright -->
-        <p class="mt-3 text-center">&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
+        <p class="mt-3 text-center text-dark fw-bold" style="font-size: 12px;">&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
+
     </div>
 </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
