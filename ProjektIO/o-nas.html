@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O Nas - Polskie Kino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+        }
+
+        h1, h3 {
+            color: #FF9900;
+        }
+
+        /* Основной контейнер для текста и изображений */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Стиль для картинок */
+        .section img {
+            max-width: 50%; /* Уменьшение размера изображений */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #FF9900; /* Граница вокруг изображений */
+        }
+
+        /* Стиль для текста */
+        .section-text {
+            padding: 20px;
+            flex: 1;
+            border: 2px solid #FF9900; /* Граница вокруг текста */
+            border-radius: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        /* Позиция изображения слева, текста справа */
+        .section-left .section-text {
+            order: 2; /* Текст справа */
+        }
+
+        .section-left img {
+            order: 1; /* Изображение слева */
+        }
+
+        /* Позиция изображения справа, текста слева */
+        .section-right .section-text {
+            order: 1; /* Текст слева */
+        }
+
+        .section-right img {
+            order: 2; /* Изображение справа */
+        }
+
+        .btn-primary {
+            background-color: #FF9900;
+            border-color: #FF9900;
+        }
+
+        .btn-primary:hover {
+            background-color: #e68a00;
+            border-color: #e68a00;
+        }
+
+        nav {
+            background-color: #FF9900;
+        }
+
+        nav a {
+            color: black !important;
+        }
+
+        nav a:hover {
+            color: #ffffff !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Polskie Kino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kariera.html">Kariera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa-kina.html">Mapa kina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="o-nas.html">O nas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-4 mb-4">O Nas</h1>
+                <p class="lead mb-4">Poznaj historię naszego kina - miejsca, które łączy pasję do filmu i kulturę wspólnego oglądania.</p>
+            </div>
+
+            <!-- Насчет наших первых шагов -->
+            <div class="col-md-12 section section-left">
+                <img src="https://media.istockphoto.com/id/1372681569/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%83%D0%BA%D0%B8-%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%89%D0%B8%D0%B5-%D0%BA%D0%B8%D0%BD%D0%BE%D1%81%D0%BB%D0%B0%D0%BD%D0%B5%D1%86-%D1%80%D0%B5%D0%B6%D0%B8%D1%81%D1%81%D0%B8%D1%80%D1%83%D1%8F-%D1%81%D1%86%D0%B5%D0%BD%D1%83-%D0%B2-%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%B5.jpg?s=612x612&w=0&k=20&c=OJqEPCWBo6UF6yuXaHAcDWbFNh3PP9keLZskNxjoODc=" alt="Nasze początki">
+                <div class="section-text">
+                    <h3>Nasze początki</h3>
+                    <p>Nasze kino powstało w 2010 roku jako niewielka sala kinowa, która miała na celu zaoferowanie mieszkańcom naszego miasta czegoś wyjątkowego. Zamiast standardowego kinowego doświadczenia, postanowiliśmy stworzyć przestrzeń, która będzie nie tylko miejscem projekcji filmowych, ale także przestrzenią kultury, gdzie spotykają się pasjonaci sztuki filmowej, twórcy, krytycy i widzowie.</p>
+                <p>Przez pierwsze lata zmagań z rynkiem, w którym dominowały sieciowe kina, naszym celem było przekształcenie każdego seansu w coś wyjątkowego. Na początku kino borykało się z problemem finansowym, a także z trudnościami związanymi z pozyskaniem odpowiedniego sprzętu. Jednak, z pomocą lokalnych sponsorów oraz zaangażowanych pracowników, udało nam się rozwinąć i sprowadzić najnowsze technologie projekcyjne, które uczyniły nasze kino jednym z najlepszych w regionie.</p>
+            </div>
+            </div>
+
+            <!-- Инновации в кино -->
+            <div class="col-md-12 section section-right">
+                <div class="section-text">
+                    <h3>Innowacyjne podejście do filmu</h3>
+                    <p>To, co nas wyróżnia na tle innych kin, to nasze podejście do filmu. Stawiamy na różnorodność - zarówno w repertuarze, jak i w formacie. Oferujemy projekcje filmów w jakości 4K oraz organizujemy pokazy w różnych formatach: od tradycyjnego, przez 3D, aż po VR. U nas, każdy może znaleźć coś dla siebie: od klasyków kina, przez nowoczesne filmy artystyczne, aż po kinowe nowinki. <strong>Nasze kino to miejsce, w którym film staje się prawdziwą przygodą.</strong></p>
+                    <p>Jako pionierzy w organizowaniu wydarzeń filmowych w naszym regionie, od samego początku zaczęliśmy organizować festiwale filmowe, spotkania z reżyserami, projekcje filmów niezależnych oraz specjalne wydarzenia dla dzieci i młodzieży. Dzięki tej różnorodności, nasze kino stało się punktem spotkań dla pasjonatów sztuki filmowej z całej Polski.</p>
+                </div>
+                <img src="https://media.istockphoto.com/id/1371201030/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%82-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B-%D0%B8%D0%BB%D0%B8-%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B-%D0%BD%D0%B0-%D0%BD%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA%D0%B5.jpg?s=612x612&w=0&k=20&c=ggpI13E_wfvU68ZsvtKvUWjyd0vso_7wlR4WCncuTVQ=" alt="Innowacyjne podejście">
+            </div>
+
+            <!-- Проблемы и трудности -->
+            <div class="col-md-12 section section-left">
+                <img src="https://media.istockphoto.com/id/1471669024/ru/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/%D0%BF%D0%BE%D0%BB%D0%B8%D1%86%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B5%D1%82%D0%B5%D0%BA%D1%82%D0%B8%D0%B2-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82-%D1%83%D0%BB%D0%B8%D0%BA%D0%B8-%D1%80%D0%B0%D0%B7%D1%8B%D1%81%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-%D0%BF%D0%BE%D0%B4%D0%BE%D0%B7%D1%80%D0%B5%D0%B2%D0%B0%D0%B5%D0%BC%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE-%D1%83%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC%D1%83-%D0%B4%D0%B5%D0%BB%D1%83.jpg?s=640x640&k=20&c=5vAESFQsag0-rGup_iiIngKbpkSegiBJ3Nvv8YauSzc=" alt="Wyzwania i trudności">
+                <div class="section-text">
+                    <h3>Wyzwania i trudności na drodze</h3>
+                    <p>Jednym z głównych wyzwań, z którymi przyszło nam się zmierzyć, było utrzymanie niezależności w świecie dużych korporacji i sieci kinowych. Współczesne kino, zdominowane przez masowe produkcje, wymagało od nas nieustannego poszukiwania nowych form rozrywki. Stawiając na jakość, a nie ilość, musieliśmy niejednokrotnie walczyć o każdego widza, pokazując mu, że nasze kino to coś więcej niż tylko seans filmowy.</p>
+                <p>Innym wyzwaniem była organizacja projekcji filmów 3D i VR w początkowej fazie ich popularności. Zainwestowanie w najnowsze technologie było kosztowne, ale to właśnie ta inwestycja sprawiła, że nasza oferta stała się rozpoznawalna na rynku, a kino zyskało rzeszę oddanych fanów.</p>
+            </div>
+            </div>
+
+            <!-- Наша визия -->
+            <div class="col-md-12 section section-right">
+                <div class="section-text">
+                    <h3>Nasza wizja</h3>
+                    <p>Nasza misja jest prosta - chcemy dostarczać widzom najlepsze kino, pełne emocji i niezapomnianych przeżyć. Kino to nie tylko film, ale także doświadczenie wspólnego oglądania i dzielenia się wrażeniami. Każdy seans u nas to wyjątkowa podróż, którą wspólnie przeżywamy.</p>
+                <p>W przyszłości planujemy dalszy rozwój i rozbudowę naszego kina, aby jeszcze lepiej spełniać oczekiwania naszych widzów. Z myślą o rozwoju będziemy organizować jeszcze więcej festiwali filmowych, wydarzeń kulturalnych oraz współpracować z różnymi instytucjami, aby kino stało się miejscem, które na stałe zagości w życiu kulturalnym naszej społeczności.</p>
+            </div>
+                <img src="https://www.mojekonferencje.pl/media/crops/objects/object6174/object/img-8010-960x580.webp" alt="Nasza wizja">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <a href="index.php" class="btn btn-primary mt-4">Powrót do strony głównej</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
