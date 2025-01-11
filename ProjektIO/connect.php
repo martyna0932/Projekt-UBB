@@ -73,6 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
+try {
+    $pdo = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Błąd połączenia z bazą danych: " . $e->getMessage());
+}
 // Zamykamy połączenie
 $conn->close();
 ?>
