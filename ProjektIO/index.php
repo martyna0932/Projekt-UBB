@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black; color: white;">
@@ -23,39 +25,97 @@
         </div>
     </nav>
 
-
-    <div class="navbar navbar-expand-lg navbar-dark bg-warning text-dark">
-    <div class="container">
-        <ul class="navbar-nav mx-auto justify-content-center">
-        <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">VIP</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">REPERTUAR</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">UNLIMITED</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">PREZENTY</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">JEDZENIE</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">OFERTY</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">BLOG</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-link text-dark fw-bold" type="button" onclick="setActive(this)">BAR</button>
-            </li>
-        </ul>
+<!-- Przyciski z rozwijanym menu -->
+<div class="navbar navbar-expand-lg navbar-dark bg-warning text-dark">
+        <div class="container">
+            <ul class="navbar-nav mx-auto justify-content-center">
+                <!-- VIP Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="vipDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        VIP
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="vipDropdown">
+                        <li><a class="dropdown-item" href="#">Strefa VIP</a></li>
+                        <li><a class="dropdown-item" href="#">Ekskluzywne seanse</a></li>
+                        <li><a class="dropdown-item" href="#">Pakiety VIP</a></li>
+                    </ul>
+                </li>
+                <!-- Repertuar Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="repertuarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        REPERTUAR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="repertuarDropdown">
+                        <li><a class="dropdown-item" href="#">Aktualny Repertuar</a></li>
+                        <li><a class="dropdown-item" href="#">Premiery</a></li>
+                        <li><a class="dropdown-item" href="#">Klasyki kina</a></li>
+                    </ul>
+                </li>
+                <!-- Unlimited Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="unlimitedDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        UNLIMITED
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="unlimitedDropdown">
+                        <li><a class="dropdown-item" href="#">Pakiet Unlimited</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#">Rejestracja</a></li>
+                    </ul>
+                </li>
+                <!-- Prezenty Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="prezentyDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PREZENTY
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="prezentyDropdown">
+                        <li><a class="dropdown-item" href="#">Karty Podarunkowe</a></li>
+                        <li><a class="dropdown-item" href="#">Pomysły na prezent</a></li>
+                    </ul>
+                </li>
+                <!-- Jedzenie Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        JEDZENIE
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="jedzenieDropdown">
+                        <li><a class="dropdown-item" href="#">Menu kinowe</a></li>
+                        <li><a class="dropdown-item" href="#">Zamów online</a></li>
+                    </ul>
+                </li>
+                <!-- Oferty Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="ofertyDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        OFERTY
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ofertyDropdown">
+                        <li><a class="dropdown-item" href="#">Promocje</a></li>
+                        <li><a class="dropdown-item" href="#">Pakiety grupowe</a></li>
+                    </ul>
+                </li>
+                <!-- Blog Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="blogDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BLOG
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <li><a class="dropdown-item" href="#">Ostatnie wpisy</a></li>
+                        <li><a class="dropdown-item" href="#">Popularne tematy</a></li>
+                    </ul>
+                </li>
+                <!-- Bar Dropdown -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BAR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="barDropdown">
+                        <li><a class="dropdown-item" href="#">Napije</a></li>
+                        <li><a class="dropdown-item" href="#">Desery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-
-
+    
 <div class="position-relative bg-dark">
     <!-- Tło dla filmu -->
     <div class="video-background">
@@ -330,6 +390,5 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

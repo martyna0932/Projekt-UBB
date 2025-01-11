@@ -48,8 +48,9 @@ h1, h2 {
 }
 
 .bg-orange {
-    background-color: #FF9900 !important;
+    background-color: #ffc404;
 }
+
    /* Usunięcie podkreślenia z przycisków */
    .navbar .btn-link {
     text-decoration: none;
@@ -66,7 +67,7 @@ h1, h2 {
 }
 /* Efekt hover dla przycisków */
 .navbar-nav .nav-item .btn-link:hover {
-    color: white!important; 
+    color: white  !important; 
     background-color: transparent !important; /* Brak tła */
 }
 
@@ -75,6 +76,7 @@ h1, h2 {
     overflow: hidden;
     height: 100vh;
     background-color: black;
+
 }
 
 .video-background iframe {
@@ -107,7 +109,7 @@ h1, h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 50px auto 0; /* Zwiększ margines górny (50px) dla większej przestrzeni */
+    margin: 70px auto 0; /* Zwiększ margines górny (50px) dla większej przestrzeni */
     text-align: center;
 }
 .container.mt-5 {
@@ -143,15 +145,15 @@ h1, h2 {
 .input-group button {
     padding: 10px 20px;
     border: none;
-    background-color: #4C4480;
-    color: white;
+    background-color:  #ffc404;
+    color: black;
     font-size: 16px;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 .input-group button:hover {
-    background-color: #405080;
+    background-color: #F6BE05;
 }
 
 small {
@@ -248,8 +250,7 @@ iframe {
  /* Nowy styl dla aktualności */
  .carousel-item .card {
     background-color: black;
-    border: 2px solid #4C4480 !important; /* Fioletowa ramka */
-    text-align: center;
+    border: 2px solid  #ffc404 !important ;
 }
 
 .carousel-item .card-body {
@@ -258,7 +259,7 @@ iframe {
 }
 
 .carousel-item .card-title a {
-    color: #4C4480 !important;
+    color:  #ffc404 !important ;
     text-decoration: none;
 }
 .carousel-item .card-text small {
@@ -274,4 +275,94 @@ iframe {
 
 .carousel-control-next {
     right: -50px; /* Przycisk "następny" umieszczamy na prawo */
+}
+/* Domyślny wygląd przycisków */
+.navbar-nav .nav-item .btn-link {
+    color: #000; /* Kolor tekstu */
+    background-color: transparent; /* Przezroczyste tło */
+    border: none; /* Usunięcie obramowania */
+    transition: color 0.3s ease; /* Płynne przejście koloru */
+}
+
+/* Efekt hover dla przycisków */
+.navbar-nav .nav-item .btn-link:hover {
+    color: #f8f9fa !important; /* Kolor tekstu na hover */
+    background-color: rgba(0, 0, 0, 0.1) !important; /* Tło na hover */
+    border-radius: 5px; /* Zaokrąglenie krawędzi */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynna animacja */
+}
+
+/* Stylowanie rozwijanego menu */
+.navbar-nav .dropdown-menu {
+    background-color: #fff; /* Tło rozwijanego menu */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Cień */
+    padding: 10px 0; /* Odstępy wewnątrz */
+    min-width: 180px; /* Minimalna szerokość menu */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* Efekt początkowego przesunięcia */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Animacje */
+}
+
+/* Pokaż menu po najechaniu */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Animacja wejścia menu */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Płynne pojawianie się */
+}
+
+/* Stylowanie elementów w rozwijanym menu */
+.navbar-nav .dropdown-item {
+    color: #333; /* Kolor tekstu w menu */
+    padding: 12px 20px; /* Odstępy wokół tekstu */
+    border-radius: 5px; /* Zaokrąglenie elementów menu */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynne przejście */
+}
+
+/* Efekt hover dla elementów w menu */
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa; /* Tło na hover */
+    color: #000; /* Kolor tekstu na hover */
+}
+
+/* Animacja dla rozwijanego menu */
+.navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Wyświetlenie menu po najechaniu */
+}
+
+/* Dodatkowe style dla przycisków w navbarze */
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Odstęp między przyciskami */
+}
+
+/* Dodatkowe efekty responsywności */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .btn-link {
+        font-size: 14px; /* Zmniejszenie rozmiaru czcionki na małych ekranach */
+        padding: 10px; /* Zmniejszenie odstępów */
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 100%; /* Szerokość menu na małych ekranach */
+        min-width: 0;
+        border-radius: 0; /* Brak zaokrąglonych rogów na małych ekranach */
+        box-shadow: none; /* Brak cienia */
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 12px 15px; /* Dopasowanie paddingu */
+    }
+}
+
+/* Stylowanie dla aktywnego przycisku */
+.navbar-nav .nav-item.active .btn-link {
+    color: #ff9800; /* Zmiana koloru aktywnego przycisku */
+    font-weight: bold;
+    background-color: rgba(255, 152, 0, 0.1); /* Tło aktywnego przycisku */
 }
