@@ -6,6 +6,7 @@
     <title>Polskie Kino Layout</title>
  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -279,7 +280,41 @@
         <!-- Linki Section (Now in a row) -->
         <div class="col-md-12 text-center mb-4">
             <ul class="list-unstyled d-flex justify-content-center">
-                <li class="mx-3"><a href="kontakt.html" class="text-white small">Kontakt do nas</a></li>
+            <li class="mx-3">
+    <!-- Кнопка для открытия модального окна -->
+    <button type="button" class="btn btn-link text-white text-decoration-underline" data-bs-toggle="modal" data-bs-target="#contactModal" style="text-decoration: underline; font-size: 0.875rem; padding: 0; line-height: 1;">
+        Kontakt do nas
+    </button>
+</li>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="background-color: #000; color: #FFF; border-radius: 8px;">
+            <!-- Заголовок окна -->
+            <div class="modal-header" style="border-bottom: 1px solid  #ffc404;">
+                <h5 class="modal-title" id="contactModalLabel" style="color:  #ffc404;">Kontakt do nas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+            <!-- Тело окна -->
+            <div class="modal-body">
+                <p><strong>Telefon:</strong></p>
+                <ul>
+                    <li>+48 123 456 789</li>
+                    <li>+48 987 654 321</li>
+                </ul>
+                <p><strong>Adres:</strong></p>
+                <p>ul. Nowa 15, 00-001 Warszawa</p>
+            </div>
+            <!-- Кнопка закрытия -->
+            <div class="modal-footer" style="border-top: 1px solid  #ffc404;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="background-color: #444; color: #FFF; border: none;">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
                 <li class="mx-3"><a href="regulamin.html" class="text-white small">Regulamin</a></li>
                 <li class="mx-3"><a href="polityka-prywatnosci.html" class="text-white small">Polityka prywatności</a></li>
                 <li class="mx-3"><a href="pomoc.html" class="text-white small">Pomoc</a></li>
@@ -293,6 +328,7 @@
         <p class="mt-3 text-center">&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
