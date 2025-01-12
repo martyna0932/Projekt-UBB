@@ -325,11 +325,33 @@
                         </a>
                     </li>
                     <li class="d-flex justify-content-center text-dark">
-                        <a href="mapa-kina.html" class="text-dark d-flex align-items-center">
-                            Mapa kina
-                            
-                        </a>
-                    </li>
+    <button type="button" class="btn btn-link text-dark d-flex align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#cinemaMapModal" style="font-size: 1rem; padding: 0; line-height: 1;">
+        Mapa kina
+    </button>
+</li>
+
+<!-- Modal for Cinema Map -->
+<div class="modal fade" id="cinemaMapModal" tabindex="-1" aria-labelledby="cinemaMapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #000; color: #FFF; border-radius: 8px;">
+            <!-- Modal Header -->
+            <div class="modal-header" style="border-bottom: 1px solid #ffc404;">
+                <h5 class="modal-title" id="cinemaMapModalLabel" style="color: #ffc404;">Mapa Kina</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+            <!-- Modal Body with the Cinema Map Image -->
+            <div class="modal-body">
+                <img src="icons/mapa-kina.png" alt="Mapa kina" class="img-fluid" />
+                <p class="text-center mt-3" style="font-size: 0.875rem;">Testowa wersja</p>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer" style="border-top: 1px solid #ffc404;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="background-color: #444; color: #FFF; border: none;">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </ul>
             </div>
 
@@ -337,16 +359,90 @@
             <div class="col-md-4 text-center mb-4">
                 <h5 class="text-dark ">INFORMACJE</h5>
                 <ul class="list-unstyled">
-                    <li class="d-flex justify-content-center text-dark">
-                        <a href="kontakt.html" class="text-dark d-flex align-items-center">
-                            Kontakt do nas
-                        </a>
-                    </li>
-                    <li class="d-flex justify-content-center text-dark">
-                        <a href="regulamin.html" class="text-dark d-flex align-items-center">
-                            Regulamin
-                        </a>
-                    </li>
+                
+                <li class="d-flex justify-content-center text-dark">
+    <button type="button" class="btn btn-link text-dark d-flex align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#contactModal" style="font-size: 1rem; padding: 0; line-height: 1;">
+        Kontakt do nas
+    </button>
+</li>
+
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="background-color: #000; color: #FFF; border-radius: 8px;">
+            
+            <div class="modal-header" style="border-bottom: 1px solid #ffc404;">
+                <h5 class="modal-title" id="contactModalLabel" style="color: #ffc404;">Kontakt do nas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+          
+            <div class="modal-body">
+                <p><strong>Telefon:</strong></p>
+                <ul>
+                    <li>+48 123 456 789</li>
+                    <li>+48 987 654 321</li>
+                </ul>
+                <p><strong>Adres:</strong></p>
+                <p>ul. Nowa 15, 00-001 Warszawa</p>
+            </div>
+            
+            <div class="modal-footer" style="border-top: 1px solid #ffc404;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="background-color: #444; color: #FFF; border: none;">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<li class="d-flex justify-content-center text-dark">
+    <button type="button" class="btn btn-link text-dark text-decoration-none d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#regulaminModal">
+        Regulamin
+    </button>
+</li>
+
+<div class="modal fade" id="regulaminModal" tabindex="-1" aria-labelledby="regulaminModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #000; color: #fff;">
+           
+            <div class="modal-header" style="background-color: #000; color: #fff;">
+                <h5 class="modal-title" id="regulaminModalLabel" style="color: #ffc404;">Regulamin</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           
+            <div class="modal-body" style="background-color: #000; color: #fff;">
+                <h6 style="color: #ffc404;"><strong>1. Ogólne postanowienia</strong></h6>
+                <p>1.1. Regulamin określa zasady korzystania z usług oferowanych przez kino "Polskie Kino".</p>
+                <p>1.2. Każdy klient, dokonując zakupu biletu lub korzystając z usług kina, zobowiązuje się do przestrzegania niniejszego regulaminu.</p>
+                <p>1.3. Kino zastrzega sobie prawo do zmian w regulaminie, o których klienci będą informowani za pośrednictwem strony internetowej oraz informacji na terenie obiektu.</p>
+                
+                <h6 style="color: #ffc404;"><strong>2. Zakup biletów</strong></h6>
+                <p>2.1. Bilety można zakupić w kasie kina, za pośrednictwem strony internetowej, a także w aplikacji mobilnej.</p>
+                <p>2.2. Zakupione bilety nie podlegają zwrotowi, chyba że seans zostanie odwołany z winy kina.</p>
+                <p>2.3. Każdy bilet jest ważny wyłącznie na wskazany seans, datę i godzinę.</p>
+
+                <h6 style="color: #ffc404;"><strong>3. Zasady uczestnictwa w seansach</strong></h6>
+                <p>3.1. Klient zobowiązany jest do punktualnego przybycia na seans.</p>
+                <p>3.2. Spóźnieni widzowie mogą nie zostać wpuszczeni na salę kinową, aby nie zakłócać seansu innym uczestnikom.</p>
+                <p>3.3. Na terenie sali kinowej obowiązuje zakaz:</p>
+                <ul>
+                    <li>używania telefonów komórkowych,</li>
+                    <li>rejestrowania obrazu i dźwięku,</li>
+                    <li>spożywania alkoholu i palenia papierosów.</li>
+                </ul>
+
+                <h6 style="color: #ffc404;"><strong>4. Rezerwacje i miejsca</strong></h6>
+                <p>4.1. Rezerwacja biletów jest możliwa online lub telefonicznie.</p>
+                <p>4.2. Zarezerwowane bilety należy odebrać najpóźniej 30 minut przed rozpoczęciem seansu.</p>
+                <p>4.3. Kino zastrzega sobie prawo do anulowania rezerwacji, jeśli bilety nie zostaną odebrane w terminie.</p>
+            </div>
+            
+            <div class="modal-footer" style="background-color: #000; color: #fff;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
                     <li class="d-flex justify-content-center text-dark">
                         <a href="polityka.html" class="text-dark d-flex align-items-center">
                             Polityka prywatności
