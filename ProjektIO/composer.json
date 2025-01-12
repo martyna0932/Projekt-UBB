@@ -1,0 +1,19 @@
+{
+    "name": "marty/projekt-io",
+    "autoload": {
+        "psr-4": {
+            "Marty\\ProjektIo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martyna",
+            "email": "martyna263@onet.eu"
+        }
+    ],
+    "require": {},
+
+    "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  }
+}
