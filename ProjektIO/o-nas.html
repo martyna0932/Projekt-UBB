@@ -10,15 +10,20 @@
     <style>
         body {
             background-color: #000000;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
+            font-size: 1.2rem;
         }
 
         h1, h3 {
             color: #ffc404;
-
+            font-size: 2.5rem;
         }
 
-        
+        .lead {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
         .section {
             display: flex;
             flex-wrap: wrap;
@@ -27,78 +32,53 @@
             align-items: center;
         }
 
-       
         .section img {
             max-width: 50%;
             height: auto;
             margin-bottom: 20px;
             border-radius: 8px;
-
-            border: 2px solid #ffc404; 
+            border: 2px solid #ffc404;
         }
 
-        
         .section-text {
             padding: 20px;
             flex: 1;
-            border: 2px solid #ffc404; 
+            border: 2px solid #ffc404;
             border-radius: 8px;
             margin-left: 20px;
             margin-right: 20px;
         }
 
-        
-        .section-left .section-text {
-            order: 2; 
-        }
-
-        .section-left img {
-            order: 1; 
-        }
-
-        
-        .section-right .section-text {
-            order: 1; 
-        }
-
-        .section-right img {
-            order: 2; 
-        }
-
         .btn-primary {
-
             background-color: #ffc107;
             border-color: #ffc107;
+            font-size: 1.1rem;
         }
 
         .btn-primary:hover {
-            background-color: #ffc107;
-            border-color: #ffc107;
+            background-color: #ffb700;
+            border-color: #ffb700;
         }
 
         nav {
             background-color: #ffc107;
         }
 
-
         nav a {
             color: black !important;
+            font-size: 1.2rem;
         }
 
         nav a:hover {
             color: #ffffff !important;
         }
 
-        .navbar-nav {
-            margin-left: auto;
-        
+        footer p {
+            font-size: 1.1rem;
         }
-
     </style>
 </head>
 <body>
-
-    
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#">Polskie Kino</a>
@@ -128,46 +108,34 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1 class="fw-bold display-4 mb-4">O Nas</h1>
-                <p class="lead mb-4">Poznaj historię naszego kina - miejsca, które łączy pasję do filmu i kulturę wspólnego oglądania.</p>
+                <p class="lead mb-4">Poznaj historię naszego kina – miejsca, które łączy pasję do filmu i wspólne emocje.</p>
             </div>
 
-           
             <div class="col-md-12 section section-left">
                 <img src="https://media.istockphoto.com/id/1372681569/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%83%D0%BA%D0%B8-%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%89%D0%B8%D0%B5-%D0%BA%D0%B8%D0%BD%D0%BE%D1%81%D0%BB%D0%B0%D0%BD%D0%B5%D1%86-%D1%80%D0%B5%D0%B6%D0%B8%D1%81%D1%81%D0%B8%D1%80%D1%83%D1%8F-%D1%81%D1%86%D0%B5%D0%BD%D1%83-%D0%B2-%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%B5.jpg?s=612x612&w=0&k=20&c=OJqEPCWBo6UF6yuXaHAcDWbFNh3PP9keLZskNxjoODc=" alt="Nasze początki">
                 <div class="section-text">
                     <h3 class="fw-bold">Nasze początki</h3>
-                    <p>Nasze kino powstało w 2010 roku jako niewielka sala kinowa, która miała na celu zaoferowanie mieszkańcom naszego miasta czegoś wyjątkowego. Zamiast standardowego kinowego doświadczenia, postanowiliśmy stworzyć przestrzeń, która będzie nie tylko miejscem projekcji filmowych, ale także przestrzenią kultury, gdzie spotykają się pasjonaci sztuki filmowej, twórcy, krytycy i widzowie.</p>
-                <p>Przez pierwsze lata zmagań z rynkiem, w którym dominowały sieciowe kina, naszym celem było przekształcenie każdego seansu w coś wyjątkowego. Na początku kino borykało się z problemem finansowym, a także z trudnościami związanymi z pozyskaniem odpowiedniego sprzętu. Jednak, z pomocą lokalnych sponsorów oraz zaangażowanych pracowników, udało nam się rozwinąć i sprowadzić najnowsze technologie projekcyjne, które uczyniły nasze kino jednym z najlepszych w regionie.</p>
-            </div>
+                    <p>Nasze kino powstało w 2010 roku jako niewielka sala kinowa, która miała na celu zaoferowanie mieszkańcom naszego miasta czegoś wyjątkowego. Zamiast standardowego kinowego doświadczenia, postanowiliśmy stworzyć przestrzeń, która będzie nie tylko miejscem projekcji filmowych, ale także przestrzenią kultury, gdzie spotykają się pasjonaci sztuki filmowej, twórcy, krytycy i widzowie.</p></div>
             </div>
 
-          
             <div class="col-md-12 section section-right">
                 <div class="section-text">
-                    <h3 class="fw-bold">Innowacyjne podejście do filmu</h3>
-                    <p>To, co nas wyróżnia na tle innych kin, to nasze podejście do filmu. Stawiamy na różnorodność - zarówno w repertuarze, jak i w formacie. Oferujemy projekcje filmów w jakości 4K oraz organizujemy pokazy w różnych formatach: od tradycyjnego, przez 3D, aż po VR. U nas, każdy może znaleźć coś dla siebie: od klasyków kina, przez nowoczesne filmy artystyczne, aż po kinowe nowinki. <strong>Nasze kino to miejsce, w którym film staje się prawdziwą przygodą.</strong></p>
-                    <p>Jako pionierzy w organizowaniu wydarzeń filmowych w naszym regionie, od samego początku zaczęliśmy organizować festiwale filmowe, spotkania z reżyserami, projekcje filmów niezależnych oraz specjalne wydarzenia dla dzieci i młodzieży. Dzięki tej różnorodności, nasze kino stało się punktem spotkań dla pasjonatów sztuki filmowej z całej Polski.</p>
-                </div>
+                    <h3 class="fw-bold">Innowacyjne podejście</h3>
+                    <p>To, co nas wyróżnia na tle innych kin, to nasze podejście do filmu. Oferujemy projekcje filmów w jakości 4K oraz organizujemy pokazy w różnych formatach: od tradycyjnego, przez 3D, aż po VR. U nas, każdy może znaleźć coś dla siebie: od klasyków kina, przez nowoczesne filmy artystyczne, aż po kinowe nowinki. <strong>Nasze kino to miejsce, w którym film staje się prawdziwą przygodą.</strong></p></div>
                 <img src="https://media.istockphoto.com/id/1371201030/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%82-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B-%D0%B8%D0%BB%D0%B8-%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B-%D0%BD%D0%B0-%D0%BD%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA%D0%B5.jpg?s=612x612&w=0&k=20&c=ggpI13E_wfvU68ZsvtKvUWjyd0vso_7wlR4WCncuTVQ=" alt="Innowacyjne podejście">
             </div>
 
-            
             <div class="col-md-12 section section-left">
                 <img src="https://media.istockphoto.com/id/1471669024/ru/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/%D0%BF%D0%BE%D0%BB%D0%B8%D1%86%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B5%D1%82%D0%B5%D0%BA%D1%82%D0%B8%D0%B2-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82-%D1%83%D0%BB%D0%B8%D0%BA%D0%B8-%D1%80%D0%B0%D0%B7%D1%8B%D1%81%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-%D0%BF%D0%BE%D0%B4%D0%BE%D0%B7%D1%80%D0%B5%D0%B2%D0%B0%D0%B5%D0%BC%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE-%D1%83%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC%D1%83-%D0%B4%D0%B5%D0%BB%D1%83.jpg?s=640x640&k=20&c=5vAESFQsag0-rGup_iiIngKbpkSegiBJ3Nvv8YauSzc=" alt="Wyzwania i trudności">
                 <div class="section-text">
-                    <h3 class="fw-bold">Wyzwania i trudności na drodze</h3>
-                    <p>Jednym z głównych wyzwań, z którymi przyszło nam się zmierzyć, było utrzymanie niezależności w świecie dużych korporacji i sieci kinowych. Współczesne kino, zdominowane przez masowe produkcje, wymagało od nas nieustannego poszukiwania nowych form rozrywki. Stawiając na jakość, a nie ilość, musieliśmy niejednokrotnie walczyć o każdego widza, pokazując mu, że nasze kino to coś więcej niż tylko seans filmowy.</p>
-                <p>Innym wyzwaniem była organizacja projekcji filmów 3D i VR w początkowej fazie ich popularności. Zainwestowanie w najnowsze technologie było kosztowne, ale to właśnie ta inwestycja sprawiła, że nasza oferta stała się rozpoznawalna na rynku, a kino zyskało rzeszę oddanych fanów.</p>
-            </div>
+                 <h3 class="fw-bold">Wyzwania i trudności na drodze</h3>
+                    <p>Jednym z głównych wyzwań, z którymi przyszło nam się zmierzyć, było utrzymanie niezależności w świecie dużych korporacji i sieci kinowych. Stawiając na jakość, a nie ilość, musieliśmy niejednokrotnie walczyć o każdego widza, pokazując mu, że nasze kino to coś więcej niż tylko seans filmowy.</p></div>
             </div>
 
-            
             <div class="col-md-12 section section-right">
                 <div class="section-text">
                     <h3 class="fw-bold">Nasza wizja</h3>
-                    <p>Nasza misja jest prosta - chcemy dostarczać widzom najlepsze kino, pełne emocji i niezapomnianych przeżyć. Kino to nie tylko film, ale także doświadczenie wspólnego oglądania i dzielenia się wrażeniami. Każdy seans u nas to wyjątkowa podróż, którą wspólnie przeżywamy.</p>
-                <p>W przyszłości planujemy dalszy rozwój i rozbudowę naszego kina, aby jeszcze lepiej spełniać oczekiwania naszych widzów. Z myślą o rozwoju będziemy organizować jeszcze więcej festiwali filmowych, wydarzeń kulturalnych oraz współpracować z różnymi instytucjami, aby kino stało się miejscem, które na stałe zagości w życiu kulturalnym naszej społeczności.</p>
-            </div>
+                    <p>Nasza misja jest prosta - chcemy dostarczać widzom najlepsze kino, pełne emocji i niezapomnianych przeżyć. Kino to nie tylko film, ale także doświadczenie wspólnego oglądania i dzielenia się wrażeniami. Każdy seans u nas to wyjątkowa podróż, którą wspólnie przeżywamy.</p></div>
                 <img src="https://www.mojekonferencje.pl/media/crops/objects/object6174/object/img-8010-960x580.webp" alt="Nasza wizja">
             </div>
 
@@ -177,14 +145,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-orange fw-bold text-dark py-4 mt-5">
         <div class="container text-center">
             <p>&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
