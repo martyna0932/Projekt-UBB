@@ -36,7 +36,6 @@ if ($stmt->execute()) {
 } else {
     echo "Błąd: " . $stmt->error;
 }
-
 // Zamykamy zapytanie i połączenie
 $stmt->close();
 $conn->close();
