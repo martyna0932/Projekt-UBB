@@ -24,7 +24,7 @@
             </div>
         </div>
     </nav>
-
+    
 <!-- Przyciski z rozwijanym menu -->
 <div class="navbar navbar-expand-lg navbar-dark bg-warning text-dark">
         <div class="container">
@@ -115,6 +115,8 @@
             </ul>
         </div>
     </div>
+
+
     
 <div class="position-relative bg-dark">
     <!-- Tło dla filmu -->
@@ -131,13 +133,19 @@
         </div>
     </div>
 
-    <!-- Tekst na filmie -->
-    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-        <h1 class="display-4 fw-bold">Sonic 3 - Szybki jak błyskawica</h1>
-        <p class="lead">Piorunem wlatuje do kin w formatach ScreenX i 4DX!</p>
-        <a href="#" class="btn btn-warning btn-lg px-5 py-3">Kup Bilet</a>
-    </div>
+   <!-- Tekst na filmie -->
+<!-- Tekst na filmie -->
+<div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+    <h1 class="display-4 fw-bold">Sonic 3 - Szybki jak błyskawica</h1>
+    <p class="lead">Piorunem wlatuje do kin w formatach ScreenX i 4DX!</p>
+    <a href="formularz.php" class="btn btn-warning btn-lg px-5 py-3" id="buyTicketBtn">Kup Bilet</a>
 </div>
+</div>
+</div>
+
+
+
+
 <div class="container mt-5 bg-black-content">
 <h2 class="text-center mb-4">NA EKRANIE</h2>
     <div class="row justify-content-center gx-3 gy-4">
