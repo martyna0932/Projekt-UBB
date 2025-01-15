@@ -11,8 +11,6 @@
             "email": "martyna263@onet.eu"
         }
     ],
-    "require": {},
-
     "require-dev": {
     "phpunit/phpunit": "^11.5"
   }

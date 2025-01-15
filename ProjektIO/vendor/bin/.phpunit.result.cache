@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"ExampleTest::testAddition":0.002}}
+{"version":1,"defects":{"PosterResolutionTest::testPosterImageResolution":8},"times":{"ExampleTest::testAddition":0.002,"PosterResolutionTest::testPosterImageResolution":0.007}}
