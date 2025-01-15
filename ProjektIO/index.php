@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -23,8 +24,7 @@
             <a class="btn btn-light fw-bold" href="register.html">Rejestracja</a>
             </div>
         </div>
-    </nav>
-    
+    </nav>   
 <!-- Przyciski z rozwijanym menu -->
 <div class="navbar navbar-expand-lg navbar-dark bg-warning text-dark">
         <div class="container">
@@ -72,8 +72,8 @@
                         <li><a class="dropdown-item" href="#">Pomysły na prezent</a></li>
                     </ul>
                 </li>
-                <!-- Jedzenie Dropdown -->
-                <li class="nav-item dropdown">
+             <!-- Jedzenie Dropdown -->
+             <li class="nav-item dropdown">
                     <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         JEDZENIE
                     </button>
@@ -82,6 +82,7 @@
                         <li><a class="dropdown-item" href="#">Zamów online</a></li>
                     </ul>
                 </li>
+
                 <!-- Oferty Dropdown -->
                 <li class="nav-item dropdown">
                     <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="ofertyDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -102,8 +103,8 @@
                         <li><a class="dropdown-item" href="#">Popularne tematy</a></li>
                     </ul>
                 </li>
-                <!-- Bar Dropdown -->
-                <li class="nav-item dropdown">
+                    <!-- Bar Dropdown -->
+                    <li class="nav-item dropdown">
                     <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         BAR
                     </button>
@@ -112,12 +113,6 @@
                         <li><a class="dropdown-item" href="#">Desery</a></li>
                     </ul>
                 </li>
-            </ul>
-        </div>
-    </div>
-
-
-    
 <div class="position-relative bg-dark">
     <!-- Tło dla filmu -->
     <div class="video-background">
@@ -265,7 +260,6 @@
     </div>
 </div>
 
-
 <div class="newsletter-container">
     <h2>Newsletter</h2>
     <p>Bądź na bieżąco z najnowszymi premierami, wydarzeniami i ofertami specjalnymi, kuponami rabatowymi!</p>
@@ -279,6 +273,7 @@
         Podanie adresu e-mail oznacza wyrażenie zgody na otrzymywanie informacji handlowych o charakterze marketingowym, w tym dotyczących repertuaru, wydarzeń i konkursów organizowanych przez Helios S.A. wysyłanych za pomocą środków komunikacji elektronicznej przez Helios S.A. Administratorem danych osobowych jest Helios S.A. z siedzibą w Łodzi (90-318) przy ul. Sienkiewicza 82/84. Pani/Pana dane będą przetwarzane w celu wykonania zamówionej usługi. Więcej informacji na temat przetwarzania danych osobowych znajduje się w Polityce Prywatności.
     </small>
 </div>
+
 
 <footer class="bg-orange text-white py-4 mt-5">
     <div class="container">
