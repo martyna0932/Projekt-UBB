@@ -72,17 +72,16 @@
                         <li><a class="dropdown-item" href="#">Pomysły na prezent</a></li>
                     </ul>
                 </li>
-             <!-- Jedzenie Dropdown -->
-             <li class="nav-item dropdown">
-                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        JEDZENIE
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="jedzenieDropdown">
-                        <li><a class="dropdown-item" href="#">Menu kinowe</a></li>
-                        <li><a class="dropdown-item" href="#">Zamów online</a></li>
-                    </ul>
-                </li>
-
+               <!-- Jedzenie Dropdown -->
+<li class="nav-item dropdown">
+    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        JEDZENIE
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="jedzenieDropdown">
+        <li><a class="dropdown-item" href="menu-cinema.php">Menu kinowe</a></li> <!-- Link do Menu kinowego -->
+        <li><a class="dropdown-item" href="order-online.php">Zamów online</a></li> <!-- Link do Zamów online -->
+    </ul>
+</li>
                 <!-- Oferty Dropdown -->
                 <li class="nav-item dropdown">
                     <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="ofertyDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,16 +102,22 @@
                         <li><a class="dropdown-item" href="#">Popularne tematy</a></li>
                     </ul>
                 </li>
-                    <!-- Bar Dropdown -->
-                    <li class="nav-item dropdown">
-                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        BAR
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="barDropdown">
-                        <li><a class="dropdown-item" href="#">Napije</a></li>
-                        <li><a class="dropdown-item" href="#">Desery</a></li>
-                    </ul>
-                </li>
+                <!-- Bar Dropdown -->
+<li class="nav-item dropdown">
+    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        BAR
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="barDropdown">
+        <li><a class="dropdown-item" href="menu.php?category=drinks">Napije</a></li> <!-- Link do napojów -->
+        <li><a class="dropdown-item" href="menu.php?category=desserts">Desery</a></li> <!-- Link do deserów -->
+    </ul>
+</li>
+            </ul>
+        </div>
+    </div>
+
+
+    
 <div class="position-relative bg-dark">
     <!-- Tło dla filmu -->
     <div class="video-background">
@@ -263,16 +268,56 @@
 <div class="newsletter-container">
     <h2>Newsletter</h2>
     <p>Bądź na bieżąco z najnowszymi premierami, wydarzeniami i ofertami specjalnymi, kuponami rabatowymi!</p>
-    <form action="#" method="post">
+    <form action="#" method="post" onsubmit="showPopup(event)">
         <div class="input-group">
             <input type="email" name="email" placeholder="Podaj swój adres e-mail" required>
             <button type="submit" class="btn-submit">Zapisz mnie</button>
         </div>
     </form>
     <small>
-        Podanie adresu e-mail oznacza wyrażenie zgody na otrzymywanie informacji handlowych o charakterze marketingowym, w tym dotyczących repertuaru, wydarzeń i konkursów organizowanych przez Helios S.A. wysyłanych za pomocą środków komunikacji elektronicznej przez Helios S.A. Administratorem danych osobowych jest Helios S.A. z siedzibą w Łodzi (90-318) przy ul. Sienkiewicza 82/84. Pani/Pana dane będą przetwarzane w celu wykonania zamówionej usługi. Więcej informacji na temat przetwarzania danych osobowych znajduje się w Polityce Prywatności.
-    </small>
+    Podanie adresu e-mail oznacza wyrażenie zgody na otrzymywanie informacji handlowych o charakterze marketingowym, w tym dotyczących repertuaru, wydarzeń i konkursów organizowanych przez Polskie Kino S.A. wysyłanych za pomocą środków komunikacji elektronicznej przez Polskie Kino S.A. Administratorem danych osobowych jest Polskie Kino S.A. z siedzibą w Łodzi (90-318) przy ul. Sienkiewicza 82/84. Pani/Pana dane będą przetwarzane w celu wykonania zamówionej usługi. Więcej informacji na temat przetwarzania danych osobowych znajduje się w Polityce Prywatności.
+</small>
+
 </div>
+
+<div id="popup" class="popup">
+    <p>Twoją pocztę zapisano. Dziękujemy, że jesteś z nami!</p>
+</div>
+
+<style>
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        display: none;
+        opacity: 0;
+        z-index: 1000;
+        transition: opacity 1s ease-in-out;
+    }
+    .popup p {
+        margin: 0;
+        font-size: 16px;
+    }
+</style>
+
+<script>
+    function showPopup(event) {
+        event.preventDefault();  // Prevent form submission for demonstration purposes
+        
+        const popup = document.getElementById('popup');
+        popup.classList.add('show');  // Show the popup with animation
+
+        setTimeout(() => {
+            popup.classList.remove('show');  // Hide the popup with animation
+        }, 3000);  // Popup disappears after 3 seconds
+    }
+</script>
+
 
 
 <footer class="bg-orange text-white py-4 mt-5">

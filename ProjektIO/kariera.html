@@ -11,6 +11,9 @@
         body {
             background-color: #000000;
             color: rgb(255, 255, 255);
+            min-height: 100vh; /* Обеспечиваем минимальную высоту страницы */
+            display: flex;
+            flex-direction: column;
         }
 
         h1, h3 {
@@ -23,8 +26,8 @@
         }
 
         .btn-primary:hover {
-            background-color: #ffc107;
-            border-color: #ffc107;
+            background-color: #e6a500;
+            border-color: #e6a500;
         }
 
         nav {
@@ -44,11 +47,11 @@
         }
 
         .content-box {
-            border: 1px solid #ffc107;
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
-            background-color: #333333;
+            background-color: #000000;
+            color: white;
         }
 
         .content-box ul {
@@ -57,7 +60,11 @@
         }
 
         .content-box li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .content-box p strong, .content-box li strong {
+            color: #ffc404;
         }
 
         .return-button {
@@ -69,16 +76,73 @@
             border-radius: 5px;
             cursor: pointer;
             text-align: center;
-            display: inline-block;
             text-decoration: none;
+            display: inline-block;
         }
 
         .return-button:hover {
             background-color: #e6a500;
         }
 
-        .container {
-            margin-left: 50px; /* Add large left margin */
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffc404;
+            margin-left: 20%;
+        }
+
+        .content-box h3 {
+            text-align: left;
+            color: #ffc404;
+        }
+
+        .content-box p {
+            text-align: justify;
+            font-size: 1.2rem;
+        }
+
+        .content-box ul {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #ffc107;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; 
+            width: 100%;
+        }
+
+        .footer-text {
+            margin: 0;
+            padding: 10px 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Новый стиль для кнопки "Ждем только тебя" */
+        .big-button {
+            background-color: #ffc107;
+            border: none;
+            color: black;
+            font-weight: bold;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 500px;
+            transition: background-color 0.3s;
+        }
+
+        .big-button:hover {
+            background-color: #e6a500;
         }
     </style>
 </head>
@@ -113,53 +177,62 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="fw-bold display-4 mb-4">Kariera w kinie</h1>
+
                 <div class="content-box">
-                    <p>Szukamy osób z pozytywnym podejściem do życia, lubiących kontakt z ludźmi i ceniących sobie współpracę, takich, które razem z nami będą tworzyły niepowtarzalną atmosferę naszych kin.</p>
-                    <p>Jako Personel Obsługi Kina będziesz współodpowiedzialny za sprawne funkcjonowanie kina. Sprzedaż biletów do kina, sprzedaż i przygotowywanie artykułów barowych, a także dbanie o czystość na terenie kina i wpuszczanie klientów na sale to główne obszary działania pracowników obsługi. Na początku swojej pracy zostaniesz zapoznany z obsługą kas, rozkładem kina, naszą ofertą - wdrożenie do pracy ułatwią Ci nasi wewnętrzni Trenerzy.</p>
+                    <p>Szukamy osób z <strong>pozytywnym podejściem</strong> do życia, lubiących <strong>kontakt z ludźmi</strong> i ceniących współpracę. Dołączając do nas, będziesz współtworzyć <strong>niepowtarzalną atmosferę</strong> naszych kin.</p>
+                    <p>Twoje obowiązki obejmą: sprzedaż biletów, obsługę baru, dbanie o czystość i wpuszczanie klientów na sale. Otrzymasz pełne wsparcie naszych Trenerów, którzy ułatwią Ci wdrożenie w obowiązki.</p>
                 </div>
 
                 <h2>5 powodów, dla których warto do nas dołączyć</h2>
                 <div class="content-box">
                     <ul>
-                        <li><strong>1. Możliwość połączenia pracy ze szkołą/studiami</strong><br>
-                            Dołączając do naszego zespołu masz możliwość zadeklarowania dni i godzin, w których jesteś dyspozycyjny i wyłączenia z grafiku dni i godzin, kiedy jesteś w szkole bądź na uczelni.</li>
-                        <li><strong>2. Ciekawe miejsce pracy</strong><br>
-                            Nasze kina to miejsca, które żyją – nie tylko filmami, ale też muzyką, teatrem, wydarzeniami sportowymi, premierami. Pracując w kinie jesteś na bieżąco z nowościami kinowymi, a także uczestniczysz w różnych wydarzeniach z obszaru kultury i rozrywki.</li>
-                        <li><strong>3. Kontakt z ludźmi</strong><br>
-                            Jeśli lubisz być pomiędzy ludźmi, rozmawiać z nimi i doradzać im, to jest praca dla Ciebie.</li>
-                        <li><strong>4. Benefity</strong><br>
-                            Naszemu personelowi oferujemy:<br>
-                            - zniżki na bilety do kina,<br>
-                            - zniżki na artykuły barowe,<br>
-                            - program premiowy, dzięki któremu możesz zwiększyć swoje zarobki.<br>
-                            Dzięki temu nie tylko pracujesz w obszarze kultury i rozrywki, ale także korzystasz z kultury i rozrywki.</li>
-                        <li><strong>5. Możliwość awansu</strong><br>
-                            Zaczynasz jako pracownik obsługi, ale z czasem możesz awansować na inne stanowiska. Dzięki temu, że działamy na terenie całej Polski, masz możliwość zmiany nie tylko stanowiska, ale też miasta, w którym pracujesz.</li>
+                        <li><strong>1. Możliwość połączenia pracy ze szkołą/studiami</strong> - dopasowujesz grafik do swoich zajęć.</li>
+                        <li><strong>2. Ciekawe miejsce pracy</strong> - zawsze jesteś na bieżąco z wydarzeniami kulturowymi.</li>
+                        <li><strong>3. Kontakt z ludźmi</strong> - dla tych, którzy cenią rozmowy i doradztwo.</li>
+                        <li><strong>4. Benefity</strong> - zniżki na bilety, artykuły barowe i program premiowy.</li>
+                        <li><strong>5. Możliwość awansu</strong> - rozwój kariery na stanowiskach w całej Polsce.</li>
                     </ul>
                 </div>
 
-                <p>Praca w charakterze Personelu Obsługi Kina to początek Twojej przygody zawodowej z kinem. Jeśli praca w kinie Ci się spodoba, będziesz dobrym, zaangażowanym pracownikiem - masz szansę awansować na wyższe stanowisko i rozwijać nowe umiejętności.</p>
-
                 <div class="content-box">
-                    <h3>Rekrutacje wewnętrzne</h3>
-                    <p>Stawiamy na rekrutacje wewnętrzne, co oznacza, że w momencie pojawienia się wakatu, kandydatów na wolne stanowisko szukamy w pierwszej kolejności w szeregach naszych pracowników. Wśród obecnie pracujących w naszych kinach Kierowników i Dyrektorów jest wiele osób, które swoją karierę zaczynały od pracy w charakterze Personelu Obsługi Kina.</p>
+                    <div class="content-box" style="border: 1px solid #ffc107; border-radius: 10px; padding: 20px; background-color: #000;">
+                        <h2 style="color: #ffc404;">Rekrutacje wewnętrzne</h2>
+                        <p>
+                            Stawiamy na rekrutacje wewnętrzne, co oznacza, że w momencie pojawienia się wakatu, kandydatów na wolne stanowisko szukamy w pierwszej kolejności w szeregach naszych pracowników. 
+                            Wśród obecnie pracujących w naszych kinach Kierowników i Dyrektorów jest wiele osób, które swoją karierę zaczynały od pracy w charakterze Personelu Obsługi Kina.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="content-box">
-                    <h3>Możliwości awansu</h3>
-                    <p>Jako pracownik obsługi kinowej masz możliwość awansować na:</p>
-                    <ul>
-                        <li>Koordynatora Zespołu</li>
-                        <li>Koordynatora ds. Szkoleń Wewnętrznych (Trenera)</li>
-                        <li>Specjalistę ds. Rezerwacji Grupowych</li>
-                        <li>Specjalistę ds. Sprzedaży</li>
-                    </ul>
+                <div class="content-box d-flex align-items-center" style="margin-left: 20px;">
+                    <div style="flex: 1; text-align: center;">
+                        <h3>Możliwości awansu</h3>
+                        <ul style="list-style-type: none; padding: 0; text-align: left;">
+                            <li>Koordynatora Zespołu</li>
+                            <li>Koordynatora ds. Szkoleń Wewnętrznych (Trenera)</li>
+                            <li>Specjalistę ds. Rezerwacji Grupowych</li>
+                            <li>Specjalistę ds. Sprzedaży</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; text-align: center;">
+                        <img src="https://img.freepik.com/premium-photo/flying-popcorn-3d-glasses-film-reel-clapboard-yellow-background-cinema-movie-concept-3d_989822-1302.jpg?semt=ais_hybrid" 
+                             alt="Cinema Concept" 
+                             class="img-fluid" 
+                             style="border: 5px solid #ffc107; border-radius: 10px; margin-left: 20px; width: 100%; max-width: 600px;">
+                    </div>
                 </div>
-                <a href="index.php" class="return-button text-center">Powrót na stronę główną</a>
+
+                <!-- Кнопка перехода на страницу с формой -->
+                <div class="col-md-12 text-center">
+                    <a href="formularz.html" class="big-button">Czekamy tylko na CIEBIE!</a>
+                </div>
+
+                
             </div>
         </div>
     </div>
 
+    <!-- Футер внизу страницы -->
     <footer class="bg-orange fw-bold text-dark py-4 mt-5">
         <div class="container text-center">
             <p>&copy; 2025 Polskie Kino. Wszystkie prawa zastrzeżone.</p>
