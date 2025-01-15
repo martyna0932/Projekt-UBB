@@ -72,16 +72,16 @@
                         <li><a class="dropdown-item" href="#">Pomysły na prezent</a></li>
                     </ul>
                 </li>
-                <!-- Jedzenie Dropdown -->
-                <li class="nav-item dropdown">
-                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        JEDZENIE
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="jedzenieDropdown">
-                        <li><a class="dropdown-item" href="#">Menu kinowe</a></li>
-                        <li><a class="dropdown-item" href="#">Zamów online</a></li>
-                    </ul>
-                </li>
+               <!-- Jedzenie Dropdown -->
+<li class="nav-item dropdown">
+    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="jedzenieDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        JEDZENIE
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="jedzenieDropdown">
+        <li><a class="dropdown-item" href="menu-cinema.php">Menu kinowe</a></li> <!-- Link do Menu kinowego -->
+        <li><a class="dropdown-item" href="order-online.php">Zamów online</a></li> <!-- Link do Zamów online -->
+    </ul>
+</li>
                 <!-- Oferty Dropdown -->
                 <li class="nav-item dropdown">
                     <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="ofertyDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,15 +103,15 @@
                     </ul>
                 </li>
                 <!-- Bar Dropdown -->
-                <li class="nav-item dropdown">
-                    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        BAR
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="barDropdown">
-                        <li><a class="dropdown-item" href="#">Napije</a></li>
-                        <li><a class="dropdown-item" href="#">Desery</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <button class="btn btn-link text-dark fw-bold dropdown-toggle" id="barDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        BAR
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="barDropdown">
+        <li><a class="dropdown-item" href="menu.php?category=drinks">Napije</a></li> <!-- Link do napojów -->
+        <li><a class="dropdown-item" href="menu.php?category=desserts">Desery</a></li> <!-- Link do deserów -->
+    </ul>
+</li>
             </ul>
         </div>
     </div>
